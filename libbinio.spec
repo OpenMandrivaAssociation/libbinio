@@ -3,9 +3,9 @@
 Summary:	Binary I/O stream class library
 Name:		libbinio
 Version:	1.4
-Release:	%mkrel 5
+Release:	%mkrel 6
 Source0:	http://prdownloads.sourceforge.net/libbinio/%{name}-%{version}.tar.bz2
-Patch0:		libbinio-1.4-no-long-long.patch
+#Patch0:		libbinio-1.4-no-long-long.patch
 Patch1:		libbinio-1.4-string-conversion.patch
 URL:		http://libbinio.sourceforge.net/
 License:	LGPLv2+
@@ -88,7 +88,7 @@ This package contains the static library of %{name}.
 
 %prep
 %setup -q
-%patch0 -p1 -b .nolonglong
+#%patch0 -p1 -b .nolonglong
 %patch1 -p1 -b .stringconversion
 
 %build
