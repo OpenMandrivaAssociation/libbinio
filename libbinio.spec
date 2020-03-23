@@ -5,14 +5,12 @@
 
 Summary:	Binary I/O stream class library
 Name:		libbinio
-Version:	1.4
-Release:	20
+Version:	1.5
+Release:	1
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://libbinio.sourceforge.net/
-Source0:	http://prdownloads.sourceforge.net/libbinio/%{name}-%{version}.tar.bz2
-Patch1:		libbinio-1.4-string-conversion.patch
-Patch2:		libbinio-1.4-gcc4.4.patch
+Source0:	https://github.com/adplug/libbinio/releases/download/%{name}-%{version}/%{name}-%{version}.tar.bz2
 
 %description
 The binary I/O stream class library presents a platform-independent
@@ -60,12 +58,12 @@ the developer documentation for %{name}.
 autoreconf -i
 
 %build
-%configure2_5x \
+%configure \
 	--disable-static
-%make
+%make_build
 
 %install
-%makeinstall_std
+%make_install
 
 %files -n %{libname}
 %{_libdir}/libbinio.so.%{major}*
