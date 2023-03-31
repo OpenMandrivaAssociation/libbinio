@@ -6,7 +6,7 @@
 Summary:	Binary I/O stream class library
 Name:		libbinio
 Version:	1.5
-Release:	1
+Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
 Url:		http://libbinio.sourceforge.net/
