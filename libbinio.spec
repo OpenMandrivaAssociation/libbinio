@@ -9,7 +9,7 @@ Version:	1.5
 Release:	2
 License:	LGPLv2+
 Group:		System/Libraries
-Url:		http://libbinio.sourceforge.net/
+Url:		https://libbinio.sourceforge.net/
 Source0:	https://github.com/adplug/libbinio/releases/download/%{name}-%{version}/%{name}-%{version}.tar.bz2
 
 %description
