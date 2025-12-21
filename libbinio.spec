@@ -12,6 +12,11 @@ Group:		System/Libraries
 Url:		https://libbinio.sourceforge.net/
 Source0:	https://github.com/adplug/libbinio/releases/download/%{name}-%{version}/%{name}-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 %description
 The binary I/O stream class library presents a platform-independent
 way to access binary data streams in C++.
